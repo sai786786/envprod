@@ -1,7 +1,7 @@
 version: "3"
 services:
   default:
-    image: "saikiran786/helloworld"
+    image: "saikiran786/ravana"
     ports:
      - "8087:3000"
     command: "cd /sample"
