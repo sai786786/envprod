@@ -36,7 +36,8 @@ pipeline {
             }
             steps {
                 sh 'ls -la'
-                sh 'docker-compose up -d'
+                sh 'docker run -d --name var -p 3385:3000 saikiran786/ravana node app.js'
+                /*sh 'docker-compose up -d'*/
                 
             }
             
