@@ -12,7 +12,7 @@ pipeline {
 
             steps {
                
-                sh 'docker build -t saikiran786/ .'
+                sh 'docker build -t saikiran786/ravana .'
                 sh 'docker tag saikiran786/ravana saikiran786/ravana:$BUILD_ID'
                 sh 'docker login -u="saikiran786" -p="9966786786"'
                 sh 'docker push saikiran786/ravana:$BUILD_ID'
