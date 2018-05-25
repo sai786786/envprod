@@ -42,6 +42,8 @@ pipeline {
                 /*sh 'docker rm vaar1'*/
                 sh 'ls -la'
                 sh 'docker run -i -d --name v1ar1 -p 3386:3000 saikiran786/ravana'
+                sh 'docker ps'
+                sh 'docker ps -a'
                 /*sh 'docker-compose up -d'*/
                 
             }
