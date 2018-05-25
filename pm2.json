@@ -7,11 +7,11 @@
       "out_file"    : "/var/{{ NODE_ENV | dev }}/log/myapp.log",
       "env": {
         "NODE_ENV": "dev",
-        "PORT": 4000
+        
       },
       "env_pro" : {
         "NODE_ENV": "pro",
-        "PORT": 4000
+        
       }
     }
   ]
