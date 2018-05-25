@@ -4,6 +4,12 @@ pipeline {
       label 'master'
     }
 }
+    stage('Test123') {  
+        steps {
+               sh 'ls'
+               sh 'npm install'
+        }
+           }
     
     stages {
     
@@ -19,12 +25,7 @@ pipeline {
                 sh 'docker push saikiran786/ravana:latest'
             }
         }
-           stage('Test123') {  
-        steps {
-               sh 'ls'
-               sh 'npm install'
-        }
-           }
+           
         stage('working_group') {  
         steps {
                sh 'echo "Yes tis Script is Working"'
