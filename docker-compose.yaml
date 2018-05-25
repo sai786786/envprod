@@ -9,4 +9,4 @@ services:
      - ./sample/.env.prod
     environment:
      - NODE_ENV=prod
-    command: "pm2 start app.json --env pro"
+    command: "node app.js"
