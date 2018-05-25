@@ -4,14 +4,15 @@ pipeline {
       label 'master'
     }
 }
-    stage('Test123') {  
+   
+    
+    stages {
+         stage('Test123') {  
         steps {
                sh 'ls'
                sh 'npm install'
         }
            }
-    
-    stages {
     
         stage('Test') {
                           
