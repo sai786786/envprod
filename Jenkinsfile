@@ -39,7 +39,7 @@ pipeline {
             }
             steps {
                 sh 'ls -la'
-                sh 'docker run -i -d --name var -p 3385:3000 saikiran786/ravana NODE_ENV="prod" node app.js'
+                sh 'docker run -i -d --name vaar1 -p 3385:3000 saikiran786/ravana NODE_ENV="prod" node app.js'
                 /*sh 'docker-compose up -d'*/
                 
             }
