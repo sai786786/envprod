@@ -22,6 +22,7 @@ pipeline {
            stage('Test123') {  
         steps {
                sh 'ls'
+               sh 'npm install'
         }
            }
         stage('working_group') {  
