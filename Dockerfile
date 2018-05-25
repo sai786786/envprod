@@ -5,6 +5,6 @@ COPY . /sample
 #COPY ./config.js /sample/config.js
 EXPOSE 3000
 #RUN node hello.js
-RUN npm install pm2 --save
+RUN npm install pm2 -g
 RUN pm2 start app.js
 
