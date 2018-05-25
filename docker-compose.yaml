@@ -5,8 +5,6 @@ services:
     ports:
      - "8087:3000"
     command: "cd /sample"
-    env_file:
-     - ./sample/.env.prod
     environment:
      - NODE_ENV=prod
     command: "node app.js"
