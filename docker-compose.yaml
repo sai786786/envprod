@@ -6,5 +6,5 @@ services:
      - "8087:3000"
     command: "cd /sample"
     environment:
-     - NODE_ENV=dev
+     - NODE_ENV=pro
     command: "node app.js"
