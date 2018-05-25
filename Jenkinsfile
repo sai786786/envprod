@@ -38,8 +38,10 @@ pipeline {
                 label 'new_hyd_21_05_18'
             }
             steps {
+                sh 'docker stop var'
+                sh 'docker rm var'
                 sh 'ls -la'
-                sh 'docker run -i -d --name vaar1 -p 3385:3000 saikiran786/ravana NODE_ENV="prod" node app.js'
+                sh 'docker run -i -d --name vaar1 -p 3386:3000 saikiran786/ravana NODE_ENV="prod" node app.js'
                 /*sh 'docker-compose up -d'*/
                 
             }
