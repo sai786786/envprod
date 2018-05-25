@@ -5,3 +5,4 @@ COPY . /sample
 #COPY ./config.js /sample/config.js
 EXPOSE 3000
 #RUN node hello.js
+RUN npm install
