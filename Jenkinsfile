@@ -39,7 +39,7 @@ pipeline {
             }
             steps {
                 /*sh 'docker stop vaar1'*/
-                sh 'docker rm vaar1'
+                /*sh 'docker rm vaar1'*/
                 sh 'ls -la'
                 sh 'docker run -i -d --name vaar1 -p 3386:3000 saikiran786/ravana pm2 start app.js'
                 /*sh 'docker-compose up -d'*/
