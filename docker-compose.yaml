@@ -5,4 +5,4 @@ services:
     ports:
      - "8087:3000"
     command: "cd /sample"
-command: 'NODE_ENV="prod" node app.js'
+    command: 'NODE_ENV="prod" node app.js'
