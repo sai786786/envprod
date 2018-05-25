@@ -1,5 +1,5 @@
 var http = require("http");
-require('dotenv-flow').config({ default_node_env: '{{NODE_ENV}}' });
+require('dotenv-flow').config();
 
 console.log(process.env.value);
 console.log(process.env.key);
