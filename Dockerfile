@@ -1,8 +1,8 @@
 FROM node:8
 RUN mkdir /sample
-WORKDIR /sample
 COPY . /sample
 EXPOSE 3000
+WORKDIR /sample
 #COPY ./config.js /sample/config.js
 #RUN node hello.js
 #WORKDIR /sample
