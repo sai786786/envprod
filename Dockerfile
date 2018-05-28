@@ -2,10 +2,10 @@ FROM node:8
 RUN mkdir /sample
 WORKDIR /sample
 COPY . /sample
-#COPY ./config.js /sample/config.js
 EXPOSE 3000
+#COPY ./config.js /sample/config.js
 #RUN node hello.js
-WORKDIR /sample
+#WORKDIR /sample
 #RUN npm install -g pm2@1.1.3
 #CMD ["pm2", "start", "app.js"]
 #RUN pm2 start app.js
